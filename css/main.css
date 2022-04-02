@@ -53,3 +53,84 @@ ul {
 
 /* Start Component */
 /* End Component */
+
+/* Start Header */
+
+header {
+    background-color: black;
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+}
+
+@media (min-width: 1199px) {
+    header nav ul li a {
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    header nav ul li a {
+        margin: 0 7px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    header nav ul li:nth-last-of-type(1),
+    header nav ul li:nth-last-of-type(2) {
+        display: none;
+    }
+}
+
+header nav ul li a.active {
+    color: #51fe44;
+}
+
+header nav ul li i {
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+header div.menu {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    header div.menu {
+        display: block;
+    }
+}
+
+header div.menu span {
+    display: block;
+    background-color: white;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 6px;
+}
+
+/* End Header */
