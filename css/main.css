@@ -1,4 +1,9 @@
 /* Start Variables */
+
+:root {
+    --main-color: #48ca95;
+}
+
 /* End Variables */
 
 /* Start Global Rules */
@@ -269,7 +274,7 @@ header div.menu span {
 }
 
 .landing .content .text .links a:hover {
-    background-color: #48ca95;
+    background-color: var(--main-color, #48ca95);
 }
 
 @media (max-width: 991px) {
@@ -316,7 +321,7 @@ header div.menu span {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background-color: #48ca95;
+    background-color: var(--main-color, #48ca95);
     margin-right: 10px;
     cursor: pointer;
 }
@@ -326,3 +331,76 @@ header div.menu span {
 }
 
 /* End Landing */
+
+/* Start Boxes */
+
+.boxes {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.boxes .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .boxes .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.boxes .container .box {
+    text-align: center;
+    border: 1px solid var(--main-color, #48ca95);
+    flex-basis: calc((100% / 3) - 30px);
+    padding: 50px 20px 20px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .boxes .container .box {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .boxes .container .box {
+        width: 100%;
+    }
+}
+
+.boxes .container .box img {
+    margin-bottom: 20px;
+}
+
+.boxes .container .box h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.boxes .container .box p {
+    font-size: 17px;
+    color: #050505;
+    line-height: 1.8;
+}
+
+@media (max-width: 991px) {
+    .boxes .container .box p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .boxes .container .box p {
+        font-size: 17px;
+    }
+}
+
+/* End Boxes */
