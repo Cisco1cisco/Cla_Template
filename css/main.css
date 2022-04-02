@@ -404,3 +404,86 @@ header div.menu span {
 }
 
 /* End Boxes */
+
+/* Start Products */
+
+.products {
+    background-color: #f7f7f7;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.products .container h2 {
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 40px;
+    border-bottom: 1px solid var(--main-color, #48ca95);
+    margin-bottom: 50px;
+}
+
+.products .container .content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products .container .content .gall {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .products .container .content .gall {
+        flex-direction: column;
+    }
+}
+
+.products .container .content .gall .product {
+    flex-basis: calc((100% / 3) - 30px);
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .container .content .gall .product h3 {
+    background-color: #252525;
+    color: white;
+    padding: 10px 50px;
+    transition: ease-in all 0.5s;
+    -webkit-transition: ease-in all 0.5s;
+    -moz-transition: ease-in all 0.5s;
+    -ms-transition: ease-in all 0.5s;
+    -o-transition: ease-in all 0.5s;
+}
+
+.products .container .content .gall .product h3:hover {
+    background-color: var(--main-color, #48ca95);
+}
+
+.products .container .content a {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--main-color, #48ca95);
+    border: 2px solid var(--main-color, #48ca95);
+    padding: 20px 70px;
+    margin-top: -80px;
+    margin-bottom: 50px;
+    transition: ease-in all 0.5s;
+    -webkit-transition: ease-in all 0.5s;
+    -moz-transition: ease-in all 0.5s;
+    -ms-transition: ease-in all 0.5s;
+    -o-transition: ease-in all 0.5s;
+}
+
+.products .container .content a:hover {
+    background-color: var(--main-color, #48ca95);
+    color: black;
+}
+
+/* End Products */
