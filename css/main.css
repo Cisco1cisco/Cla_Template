@@ -57,8 +57,10 @@ ul {
 /* Start Header */
 
 header {
-    background-color: black;
     padding: 30px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
 }
 
 header {
@@ -82,6 +84,7 @@ header nav ul li a {
     text-decoration: none;
     color: white;
     margin: 0 15px;
+    font-size: 17px;
 }
 
 @media (min-width: 1199px) {
@@ -134,3 +137,192 @@ header div.menu span {
 }
 
 /* End Header */
+
+/* Start Landing */
+
+.landing {
+    background-image: url(../photos/banner.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .landing {
+        height: 125vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .landing {
+        height: 100vh;
+    }
+}
+
+.landing .content {
+    position: absolute;
+    bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 1199px) {
+    .landing .content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 991px) {
+    .landing .content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        width: 85%;
+        bottom: unset;
+    }
+}
+
+@media (max-width: 768px) {
+    .landing .content {
+        flex-direction: column;
+        align-items: center;
+        top: 58%;
+    }
+}
+
+.landing .content .text {
+    width: 40%;
+    color: white;
+    padding-left: 20px;
+}
+
+@media (max-width: 991px) {
+    .landing .content .text {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .landing .content .text {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+.landing .content .text span {
+    display: block;
+    font-size: 31px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+    .landing .content .text span {
+        font-size: 21px;
+    }
+}
+
+.landing .content .text h1 {
+    font-size: 56px;
+    margin: 0 0 30px;
+}
+
+@media (max-width: 991px) {
+    .landing .content .text h1 {
+        font-size: 40px;
+    }
+}
+
+.landing .content .text p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.landing .content .text .links {
+    margin-top: 100px;
+    display: flex;
+}
+
+@media (max-width: 991px) {
+    .landing .content .text .links {
+        margin-top: 50px;
+    }
+}
+
+.landing .content .text .links a {
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    width: fit-content;
+    padding: 20px 40px;
+    margin-right: 10px;
+    transition: ease-in all 0.5s;
+    -webkit-transition: ease-in all 0.5s;
+    -moz-transition: ease-in all 0.5s;
+    -ms-transition: ease-in all 0.5s;
+    -o-transition: ease-in all 0.5s;
+}
+
+.landing .content .text .links a:hover {
+    background-color: #48ca95;
+}
+
+@media (max-width: 991px) {
+    .landing .content .text .links a {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .landing .content .text .links a {
+        width: 35%;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .landing .content .text .links a {
+        width: 50%;
+    }
+}
+
+.landing .content .image img {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 576px) {
+    .landing .content .image img {
+        margin-bottom: 15px;
+    }
+}
+
+.landing .content .image nav {
+    display: flex;
+    justify-content: center;
+}
+
+.landing .content .image nav div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #48ca95;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.landing .content .image nav div.active {
+    background-color: white;
+}
+
+/* End Landing */
