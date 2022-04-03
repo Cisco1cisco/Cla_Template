@@ -2,6 +2,9 @@
 
 :root {
     --main-color: #48ca95;
+    --trans-color: #ffffff;
+    --trans-dur: 0.5s;
+    --section-pad: 100px;
 }
 
 /* End Variables */
@@ -80,6 +83,10 @@ header {
     }
 }
 
+header img {
+    cursor: pointer;
+}
+
 header nav ul {
     display: flex;
 }
@@ -87,14 +94,14 @@ header nav ul {
 header nav ul li a {
     text-transform: capitalize;
     text-decoration: none;
-    color: white;
+    color: var(--trans-color, #ffffff);
     margin: 0 15px;
     font-size: 17px;
-    transition: ease-in all 0.5s;
-    -webkit-transition: ease-in all 0.5s;
-    -moz-transition: ease-in all 0.5s;
-    -ms-transition: ease-in all 0.5s;
-    -o-transition: ease-in all 0.5s;
+    transition: ease-in all var(--trans-dur, 0.5s);
+    -webkit-transition: ease-in all var(--trans-dur, 0.5s);
+    -moz-transition: ease-in all var(--trans-dur, 0.5s);
+    -ms-transition: ease-in all var(--trans-dur, 0.5s);
+    -o-transition: ease-in all var(--trans-dur, 0.5s);
 }
 
 header nav ul li a:hover {
@@ -126,15 +133,15 @@ header nav ul li a.active {
 }
 
 header nav ul li i {
-    color: white;
+    color: var(--trans-color, #ffffff);
     font-size: 18px;
     margin: 0 10px;
     cursor: pointer;
-    transition: ease-in all 0.5s;
-    -webkit-transition: ease-in all 0.5s;
-    -moz-transition: ease-in all 0.5s;
-    -ms-transition: ease-in all 0.5s;
-    -o-transition: ease-in all 0.5s;
+    transition: ease-in all var(--trans-dur, 0.5s);
+    -webkit-transition: ease-in all var(--trans-dur, 0.5s);
+    -moz-transition: ease-in all var(--trans-dur, 0.5s);
+    -ms-transition: ease-in all var(--trans-dur, 0.5s);
+    -o-transition: ease-in all var(--trans-dur, 0.5s);
 }
 
 header nav ul li i:hover {
@@ -155,7 +162,7 @@ header div.menu {
 
 header div.menu span {
     display: block;
-    background-color: white;
+    background-color: var(--trans-color, #ffffff);
     width: 30px;
     height: 4px;
     margin-bottom: 6px;
@@ -221,7 +228,7 @@ header div.menu span {
 
 .landing .content .text {
     width: 40%;
-    color: white;
+    color: var(--trans-color, #ffffff);
     padding-left: 20px;
 }
 
@@ -280,17 +287,17 @@ header div.menu span {
 
 .landing .content .text .links a {
     text-transform: capitalize;
-    color: white;
+    color: var(--trans-color, #ffffff);
     text-decoration: none;
-    border: 1px solid white;
+    border: 1px solid var(--trans-color, #ffffff);
     width: fit-content;
     padding: 20px 40px;
     margin-right: 10px;
-    transition: ease-in all 0.5s;
-    -webkit-transition: ease-in all 0.5s;
-    -moz-transition: ease-in all 0.5s;
-    -ms-transition: ease-in all 0.5s;
-    -o-transition: ease-in all 0.5s;
+    transition: ease-in all var(--trans-dur, 0.5s);
+    -webkit-transition: ease-in all var(--trans-dur, 0.5s);
+    -moz-transition: ease-in all var(--trans-dur, 0.5s);
+    -ms-transition: ease-in all var(--trans-dur, 0.5s);
+    -o-transition: ease-in all var(--trans-dur, 0.5s);
 }
 
 .landing .content .text .links a:hover {
@@ -347,7 +354,7 @@ header div.menu span {
 }
 
 .landing .content .image nav div.active {
-    background-color: white;
+    background-color: var(--trans-color, #ffffff);
 }
 
 /* End Landing */
@@ -355,8 +362,8 @@ header div.menu span {
 /* Start Boxes */
 
 .boxes {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--section-pad, 100px);
+    padding-bottom: var(--section-pad, 100px);
 }
 
 .boxes .container {
@@ -429,8 +436,8 @@ header div.menu span {
 
 .products {
     background-color: #f7f7f7;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--section-pad, 100px);
+    padding-bottom: var(--section-pad, 100px);
 }
 
 .products .container h2 {
@@ -442,7 +449,7 @@ header div.menu span {
 }
 
 .products .container .content {
-    background-color: white;
+    background-color: var(--trans-color, #ffffff);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -476,13 +483,13 @@ header div.menu span {
 
 .products .container .content .gall .product h3 {
     background-color: #252525;
-    color: white;
+    color: var(--trans-color, #ffffff);
     padding: 10px 50px;
-    transition: ease-in all 0.5s;
-    -webkit-transition: ease-in all 0.5s;
-    -moz-transition: ease-in all 0.5s;
-    -ms-transition: ease-in all 0.5s;
-    -o-transition: ease-in all 0.5s;
+    transition: ease-in all var(--trans-dur, 0.5s);
+    -webkit-transition: ease-in all var(--trans-dur, 0.5s);
+    -moz-transition: ease-in all var(--trans-dur, 0.5s);
+    -ms-transition: ease-in all var(--trans-dur, 0.5s);
+    -o-transition: ease-in all var(--trans-dur, 0.5s);
 }
 
 .products .container .content .gall .product h3:hover {
@@ -497,11 +504,11 @@ header div.menu span {
     border: 2px solid var(--main-color, #48ca95);
     padding: 20px 70px;
     margin: -80px 0 50px;
-    transition: ease-in all 0.5s;
-    -webkit-transition: ease-in all 0.5s;
-    -moz-transition: ease-in all 0.5s;
-    -ms-transition: ease-in all 0.5s;
-    -o-transition: ease-in all 0.5s;
+    transition: ease-in all var(--trans-dur, 0.5s);
+    -webkit-transition: ease-in all var(--trans-dur, 0.5s);
+    -moz-transition: ease-in all var(--trans-dur, 0.5s);
+    -ms-transition: ease-in all var(--trans-dur, 0.5s);
+    -o-transition: ease-in all var(--trans-dur, 0.5s);
 }
 
 .products .container .content a:hover {
@@ -515,8 +522,8 @@ header div.menu span {
 
 .computer {
     background-color: #4f4aa6;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--section-pad, 100px);
+    padding-bottom: var(--section-pad, 100px);
 }
 
 .computer .container {
@@ -532,7 +539,7 @@ header div.menu span {
 }
 
 .computer .container .text {
-    color: white;
+    color: var(--trans-color, #ffffff);
 }
 
 @media (max-width: 768px) {
@@ -568,15 +575,15 @@ header div.menu span {
     display: block;
     text-decoration: none;
     text-transform: capitalize;
-    color: white;
+    color: var(--trans-color, #ffffff);
     padding: 20px 50px;
     background-color: var(--main-color, #48ca95);
     width: fit-content;
-    transition: ease-in all 0.5s;
-    -webkit-transition: ease-in all 0.5s;
-    -moz-transition: ease-in all 0.5s;
-    -ms-transition: ease-in all 0.5s;
-    -o-transition: ease-in all 0.5s;
+    transition: ease-in all var(--trans-dur, 0.5s);
+    -webkit-transition: ease-in all var(--trans-dur, 0.5s);
+    -moz-transition: ease-in all var(--trans-dur, 0.5s);
+    -ms-transition: ease-in all var(--trans-dur, 0.5s);
+    -o-transition: ease-in all var(--trans-dur, 0.5s);
 }
 
 .computer .container .text a:hover {
@@ -598,8 +605,8 @@ header div.menu span {
 /* Start Customer */
 
 .customer {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--section-pad, 100px);
+    padding-bottom: var(--section-pad, 100px);
 }
 
 .customer .container {
@@ -699,8 +706,8 @@ header div.menu span {
 /* Start Contact */
 
 .contact {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--section-pad, 100px);
+    padding-bottom: var(--section-pad, 100px);
     background-image: url(../photos/contact_g.jpg);
     background-size: cover;
     background-position: center;
@@ -714,8 +721,8 @@ header div.menu span {
 
 .contact .container h2 {
     font-size: 40px;
-    color: white;
-    border-bottom: 1px solid white;
+    color: var(--trans-color, #ffffff);
+    border-bottom: 1px solid var(--trans-color, #ffffff);
     width: fit-content;
     margin-bottom: 50px;
 }
@@ -724,7 +731,7 @@ header div.menu span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid white;
+    border: 1px solid var(--trans-color, #ffffff);
     padding: 70px 50px;
     width: 80%;
 }
@@ -751,11 +758,11 @@ header div.menu span {
 .contact .container form input {
     padding: 15px;
     width: 90%;
-    border: 1px solid white;
+    border: 1px solid var(--trans-color, #ffffff);
     background: none;
-    caret-color: white;
+    caret-color: var(--trans-color, #ffffff);
     margin-bottom: 30px;
-    color: white;
+    color: var(--trans-color, #ffffff);
 }
 
 @media (max-width: 576px) {
@@ -765,7 +772,7 @@ header div.menu span {
 }
 
 .contact .container form input::placeholder {
-    color: white;
+    color: var(--trans-color, #ffffff);
 }
 
 .contact .container form input:focus {
@@ -776,10 +783,10 @@ header div.menu span {
     width: 90%;
     background: none;
     font-size: 18px;
-    border: 1px solid white;
+    border: 1px solid var(--trans-color, #ffffff);
     padding: 50px 10px;
     margin-bottom: 50px;
-    color: white;
+    color: var(--trans-color, #ffffff);
 }
 
 @media (max-width: 576px) {
@@ -789,7 +796,7 @@ header div.menu span {
 }
 
 .contact .container form textarea::placeholder {
-    color: white;
+    color: var(--trans-color, #ffffff);
 }
 
 .contact .container form textarea:focus {
@@ -805,15 +812,15 @@ header div.menu span {
     -ms-border-radius: 40px;
     -o-border-radius: 40px;
     text-transform: uppercase;
-    color: white;
+    color: var(--trans-color, #ffffff);
     padding: 20px 70px;
     font-size: 22px;
     cursor: pointer;
-    transition: ease-in all 0.5s;
-    -webkit-transition: ease-in all 0.5s;
-    -moz-transition: ease-in all 0.5s;
-    -ms-transition: ease-in all 0.5s;
-    -o-transition: ease-in all 0.5s;
+    transition: ease-in all var(--trans-dur, 0.5s);
+    -webkit-transition: ease-in all var(--trans-dur, 0.5s);
+    -moz-transition: ease-in all var(--trans-dur, 0.5s);
+    -ms-transition: ease-in all var(--trans-dur, 0.5s);
+    -o-transition: ease-in all var(--trans-dur, 0.5s);
 }
 
 .contact .container form button:hover {
@@ -821,3 +828,141 @@ header div.menu span {
 }
 
 /* End Contact */
+
+/* Start Footer */
+
+footer {
+    background-image: url(../photos/footer.jpg);
+    background-size: cover;
+    padding-top: var(--section-pad, 100px);
+}
+
+footer .container .up {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--trans-color, #ffffff);
+    padding-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+    footer .container .up {
+        flex-direction: column;
+    }
+}
+
+footer .container .up>div {
+    flex-basis: calc((100% / 4) - 30px);
+    color: var(--trans-color, #ffffff);
+}
+
+@media (max-width: 991px) {
+    footer .container .up>div {
+        flex-basis: calc((100% / 2) - 30px);
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    footer .container .up>div {
+        width: 100%;
+    }
+}
+
+footer .container .up div.logo img {
+    margin-bottom: 45px;
+}
+
+footer .container .up div.logo div.socials {
+    display: flex;
+}
+
+footer .container .up div.logo div.socials div {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--trans-color, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #222222;
+    font-size: 22px;
+    transition: ease-in all var(--trans-dur, 0.5s);
+    -webkit-transition: ease-in all var(--trans-dur, 0.5s);
+    -moz-transition: ease-in all var(--trans-dur, 0.5s);
+    -ms-transition: ease-in all var(--trans-dur, 0.5s);
+    -o-transition: ease-in all var(--trans-dur, 0.5s);
+}
+
+footer .container .up div.logo div.socials div:hover {
+    background-color: var(--main-color, #48ca95);
+    color: var(--trans-color, #ffffff);
+}
+
+footer .container .up>div h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+footer .container .up>div p {
+    font-size: 17px;
+    line-height: 2;
+}
+
+footer .container .up div.form input {
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+footer .container .up div.form input::placeholder {
+    font-weight: bold;
+}
+
+footer .container .up div.form input:focus {
+    outline: none;
+}
+
+footer .container .up div.form button {
+    background-color: var(--main-color, #48ca95);
+    padding: 15px 30px;
+    border: none;
+    color: var(--trans-color, #ffffff);
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: ease-in all var(--trans-dur, 0.5s);
+    -webkit-transition: ease-in all var(--trans-dur, 0.5s);
+    -moz-transition: ease-in all var(--trans-dur, 0.5s);
+    -ms-transition: ease-in all var(--trans-dur, 0.5s);
+    -o-transition: ease-in all var(--trans-dur, 0.5s);
+    cursor: pointer;
+}
+
+footer .container .up div.form button:hover {
+    background-color: #000;
+}
+
+footer .container .down {
+    padding: 25px 0;
+    color: #ddd;
+    text-align: center;
+    font-size: 17px;
+}
+
+/* End Footer */
